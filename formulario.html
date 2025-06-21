@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        #coment{
+            width:20;
+            height:40;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularios en HTML</h1>
+    <form>
+        <input type="hidden" name="idcontacto" value="3344555">
+        <p>
+            <label for="Nombre">nombre:</label><input type="text" name="nombre" id="nombre" value="jordan">
+        </p>
+       <p>
+            <label for="email/usuario">Email:</label>
+            <input type="text" name="email" id="email/usuario">
+        </p>
+        <p>
+            <input type="checkbox" name="Actuacion urgente" id="urgente" value="es urgente" checked>
+            <label for="urgente">Marca si es urgente</label>
+        </p>
+        <p>
+            <input type="radio" name="asunto" value="erro" id="asunto error"> 
+            <label for="asunto error">error encontrado</label>
+            <br>
+            <input type="radio" name="asunto" value="erro" id="asunto soporte"> 
+            <label for="asunto error">soporte técnico</label>
+            <br>
+            <input type="radio" name="asunto" value="erro" id="asunto comentario"> 
+            <label for="asunto error">enviar un comentario</label>
+        </p>
+        <p>
+        <label for="so">sistema Operativo</label>
+        <br>
+        <select name="so" id="so">
+            <option value="windows" selected>windows</option>
+            <option value="linux" > linux</option>
+            <option value="mac">mac</option>
+        </select>  
+        </p>
+        <p>
+            <label for="comentarios">comentarios:</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="6"></textarea>
+        </p>
+        <p>
+            <label for="daterespuesta"> Respuesta hasta el:</label>
+            <input type="date" name="fecha" id="daterespuesta">
+        </p>
+        
+    </form>
+</body>
+</html>
